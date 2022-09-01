@@ -1,4 +1,5 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Button from "./Button.vue";</script>
 
 <template>
   <div id="wrapper">
@@ -14,7 +15,8 @@
     </div>
   </div>
 
-  <button class="button-17" role="button">What am I doing wrong?</button>
+  <Button msg="What am I doing wrong?" />
+  
 </template>
 
 <style></style>
