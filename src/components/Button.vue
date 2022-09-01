@@ -1,7 +1,6 @@
 <script setup lang="ts">
-const props = defineProps({
-  msg: String,
-});
+const msg = 'What am I doing wrong?'
+
 </script>
 
 <template>
