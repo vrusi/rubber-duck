@@ -1,10 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SpeechBubble from "../components/SpeechBubble.vue";</script>
 
 <template>
   <main>
     <div class="rubber-duck" style="text-align: center">
       <h1>Let's debug!</h1>
-      <p>What's your problem?</p>
+      <SpeechBubble msg="What's your problem?"/>
       <img
         src="/image.png"
         alt="Your rubber duck helper"

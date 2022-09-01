@@ -1,4 +1,5 @@
 @import "./base.css";
+@import "./colours.scss";
 
 #app {
     padding: 2rem;
@@ -17,12 +18,6 @@ a,
     }
 }
 
-$color-blue: #83af9b;
-$color-green: #c8c8a9;
-$color-brown: #774f38;
-$color-beige: #ece5ce;
-$color-yellow: #f9cdad;
-$color-pink: #fe4365;
 
 body {
     height: 100vh;
@@ -33,10 +28,9 @@ body {
     background-color: $color-yellow;
 }
 
-body p {
+/* body p {
     transform: translatey(0px);
     animation: float 5s ease-in-out infinite;
-    mix-blend-mode: multiply;
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
@@ -50,9 +44,9 @@ body p {
     box-shadow: 20px 20px $color-blue;
     font-family: "Baloo 2", cursive;
     // border: 1px solid $color-green;
-}
+} */
 
-body p:after {
+/* body p:after {
     transform: translatey(0px);
     animation: float2 5s ease-in-out infinite;
     content: ".";
@@ -74,9 +68,9 @@ body p:after {
     left: 20px;
     box-shadow: 22px 22px $color-blue;
     z-index: -2;
-}
+} */
 
-@keyframes float {
+/* @keyframes float {
     0% {
         transform: translatey(0px);
     }
@@ -108,10 +102,9 @@ body p:after {
         line-height: 30px;
         transform: translatey(0px);
     }
-}
+} */
 
 .button-17 {
-    mix-blend-mode: multiply;
     align-items: center;
     appearance: none;
     background-color: $color-beige;
