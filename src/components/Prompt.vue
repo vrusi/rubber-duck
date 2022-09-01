@@ -1,11 +1,22 @@
 <script setup lang="ts">
-import Button from "./Button.vue";</script>
+import Button from "./Button.vue";
+
+const placeholders = [
+    "I'm implementing user registration and...",
+    "My button component doesn't redirect. The way it works is...",
+    "I am working on a component which... ",
+]
+
+function getPlaceholder() {
+    return placeholders[Math.floor(Math.random()*placeholders.length)];
+}
+</script>
 
 <template>
   <div id="wrapper">
     <div id="paper">
       <textarea
-        placeholder="I'm implementing user registration and..."
+        :placeholder=getPlaceholder()
         id="text"
         name="text"
         rows="4"
@@ -15,7 +26,7 @@ import Button from "./Button.vue";</script>
     </div>
   </div>
 
-  <Button msg="What am I doing wrong?" />
+  <Button />
   
 </template>
 
