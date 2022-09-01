@@ -1,0 +1,33 @@
+<script setup lang="ts"></script>
+
+<template>
+  <main>
+    <div class="rubber-duck" style="text-align: center">
+      <h1>Let's debug!</h1>
+      <p>What's your problem?</p>
+      <img
+        src="/image.png"
+        alt="Your rubber duck helper"
+        style="height: 150px; width: 150px; margin: 1rem auto; display: block"
+      />
+
+      <div id="wrapper">
+        <div id="paper">
+          <textarea
+            placeholder="I'm implementing user registration and..."
+            id="text"
+            name="text"
+            rows="4"
+            cols="50"
+            style="
+              word-wrap: break-word;
+              resize: none;
+            "
+          ></textarea>
+        </div>
+      </div>
+
+      <button class="button-17" role="button">What am I doing wrong?</button>
+    </div>
+  </main>
+</template>
