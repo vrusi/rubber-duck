@@ -20,8 +20,6 @@ function getPlaceholder() {
 
     <textarea :placeholder="getPlaceholder()" rows="10" cols="50"></textarea>
   </div>
-
-  <Button />
 </template>
 
 <style>
