@@ -11,16 +11,17 @@ import { RouterLink } from "vue-router";
   </header>
 </template>
 
-<style>
+<style lang="scss">
+@import "../assets/colours.scss";
+
 nav {
-  width: 100%;
-  font-size: 12px;
+  font-size: 1rem;
   text-align: center;
   margin-top: 2rem;
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: $color-a;
 }
 
 nav a.router-link-exact-active:hover {
@@ -28,9 +29,8 @@ nav a.router-link-exact-active:hover {
 }
 
 nav a {
-  display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  border-left: 1px solid $color-d;
 }
 
 nav a:first-of-type {

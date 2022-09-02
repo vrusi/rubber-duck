@@ -4,6 +4,14 @@
   <img
     src="/image.png"
     alt="Your rubber duck helper"
-    style="height: 150px; width: 150px; margin: 1rem auto; display: block"
   />
 </template>
+
+<style>
+img {
+  height: 10rem;
+  width: 10rem;
+  margin: 2rem auto;
+  display: block;
+}
+</style>

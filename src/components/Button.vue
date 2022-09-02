@@ -12,11 +12,11 @@ const msg = "What am I doing wrong?";
 button {
   align-items: center;
   appearance: none;
-  background-color: $color-beige;
+  background-color: $color-a;
   border-radius: 24px;
   border-style: none;
   box-sizing: border-box;
-  color: $color-brown;
+  color: $color-d;
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
@@ -41,10 +41,10 @@ button {
   width: auto;
   will-change: transform, opacity;
   z-index: 0;
-  box-shadow: 10px 10px #83af9b;
+  box-shadow: 10px 10px $color-c;
 }
 
 button:hover {
-  box-shadow: 20px 20px #83af9b;
+  box-shadow: 20px 20px $color-c;
 }
 </style>

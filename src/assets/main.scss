@@ -1,32 +1,32 @@
 @import "./base.css";
 @import "./colours.scss";
 
-#app {
-    padding: 2rem;
-}
-
-a,
-.green {
-    text-decoration: none;
-    color: hsl(43deg 100% 37%);
-    transition: 0.4s;
-}
-
-@media (hover: hover) {
-    a:hover {
-        background-color: hsla(56, 100%, 37%, 0.2);
-    }
-}
-
 body {
     height: 100vh;
     margin: 0;
     display: grid;
     place-items: center;
     font: 2vw system-ui;
-    background-color: $color-yellow;
+    font-family: "Baloo 2";
+    background-color: $color-b;
 }
 
-.rubber-duck {
+
+a,
+.green {
+    text-decoration: none;
+    color: $color-d;
+    transition: 0.4s;
+}
+
+@media (hover: hover) {
+    a:hover {
+        background-color: $color-a;
+    }
+}
+
+
+.container {
     min-height: 100vh;
+    text-align: center;
 }

@@ -6,7 +6,7 @@ import Prompt from "../components/Prompt.vue";
 
 <template>
   <main>
-    <div class="rubber-duck" style="text-align: center">
+    <div class="container">
       <h1>Let's debug!</h1>
       <SpeechBubble msg="What's your problem?" />
       <Duck />
@@ -14,3 +14,12 @@ import Prompt from "../components/Prompt.vue";
     </div>
   </main>
 </template>
+
+<style lang="scss">
+@import "../assets/colours.scss";
+
+h1 {
+  color: $color-d;
+  margin: 2rem auto;
+}
+</style>

@@ -22,10 +22,11 @@ function getPlaceholder() {
   </div>
 </template>
 
-<style>
+<style lang="scss">
+@import "../assets/colours.scss";
 
 .lines {
-  width: 100%;
+  width: 60vw;
   height: 100%;
   grid-column: 1;
   grid-row: 1;
@@ -43,6 +44,7 @@ function getPlaceholder() {
   border-radius: 11px;
   background-color: #f2f2f2;
   margin: 2rem auto;
+  box-shadow: 22px 22px $color-c;
 }
 
 .paper > textarea {
@@ -54,7 +56,7 @@ function getPlaceholder() {
   margin: 0 0 0 4rem;
   border: none;
   border-left: 2px rgba(255, 0, 0, 0.3) solid;
-  padding: 2rem;
+  padding: 2rem 3rem 2rem 2rem;
   grid-column: 1;
   grid-row: 1;
   font-size: 1.5rem;
