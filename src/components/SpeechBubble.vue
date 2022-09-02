@@ -4,15 +4,17 @@ import { onMounted, onUnmounted, ref } from "vue";
 const messages = [
   "What's your problem?",
   "What is it supposed to be doing?",
+  "What did you do so far?",
+  "What have you tried doing?",
   "How did you implement it?",
-  "Can you explain line by line?",
-  "I'm 5 years old.",
+  "Can you explain step by step?",
+  "I'm 5 years old. I've no idea what that means.",
   "I really don't get it. Can you be more specific about that?",
   "What were you expecting would happen?",
   "How is that not what you expected to happen?",
   "What is its responsibility?",
   "Does it depend on anything?",
-  "Are you using a proper debugging tool?",
+  "Are you using a proper debugging tool or just printing 'here'?",
 ];
 
 function getMessage() {
