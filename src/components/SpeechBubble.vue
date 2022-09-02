@@ -19,6 +19,7 @@ const messages = [
   "What do you mean?",
   "I'm not sure I'm following...",
   "Aah, I see... But why?",
+  "What does that part consist of?"
 ];
 
 function getMessage() {
