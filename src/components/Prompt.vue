@@ -61,8 +61,12 @@ function getPlaceholder() {
   grid-row: 1;
   font-size: 1.5rem;
   line-height: 2rem;
+  color: rgba(40, 110, 138, 0.8);
 }
 
+.paper > textarea::placeholder {
+  color: rgba(40, 110, 138, 0.4);
+}
 .paper > textarea:focus {
     outline: none;
 }
