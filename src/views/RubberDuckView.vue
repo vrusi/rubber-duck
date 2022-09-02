@@ -19,7 +19,7 @@ import Prompt from "../components/Prompt.vue";
 @import "../assets/colours.scss";
 
 h1 {
-  color: $color-d;
+  color: $colour-d;
   margin: 2rem auto;
 }
 </style>

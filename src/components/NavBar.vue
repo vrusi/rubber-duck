@@ -21,7 +21,7 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  color: $color-a;
+  color: $colour-a;
 }
 
 nav a.router-link-exact-active:hover {
@@ -30,7 +30,7 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   padding: 0 1rem;
-  border-left: 1px solid $color-d;
+  border-left: 1px solid $colour-d;
 }
 
 nav a:first-of-type {

@@ -53,14 +53,14 @@ onUnmounted(() => clearInterval(intervalId));
   font-weight: bold;
   letter-spacing: 3px;
   font-size: 15px;
-  color: $color-d;
-  background-color: $color-a;
+  color: $colour-d;
+  background-color: $colour-a;
   padding: 50px;
   border-radius: 11px;
   position: relative;
-  box-shadow: 20px 20px $color-c;
+  box-shadow: 20px 20px $colour-c;
   font-family: "Baloo 2", cursive;
-  // border: 1px solid $color-green;
+  // border: 1px solid $colour-green;
 }
 
 .speech-bubble:after {
@@ -68,22 +68,22 @@ onUnmounted(() => clearInterval(intervalId));
   animation: float2 5s ease-in-out infinite;
   content: ".";
   font-weight: bold;
-  // -webkit-text-stroke: 0.5px $color-green;
-  -webkit-text-fill-color: $color-a;
-  // border: 1px solid $color-green;
-  text-shadow: 22px 22px $color-c;
+  // -webkit-text-stroke: 0.5px $colour-green;
+  -webkit-text-fill-color: $colour-a;
+  // border: 1px solid $colour-green;
+  text-shadow: 22px 22px $colour-c;
   text-align: right;
   font-size: 55px;
   width: 55px;
   height: 11px;
   line-height: 30px;
   border-radius: 11px;
-  background-color: $color-a;
+  background-color: $colour-a;
   position: absolute;
   display: block;
   bottom: -30px;
   left: 20px;
-  box-shadow: 22px 22px $color-c;
+  box-shadow: 22px 22px $colour-c;
   z-index: -2;
 }
 

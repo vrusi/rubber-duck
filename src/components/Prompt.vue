@@ -44,7 +44,7 @@ function getPlaceholder() {
   border-radius: 11px;
   background-color: #f2f2f2;
   margin: 2rem auto;
-  box-shadow: 22px 22px $color-c;
+  box-shadow: 22px 22px $colour-c;
 }
 
 .paper > textarea {

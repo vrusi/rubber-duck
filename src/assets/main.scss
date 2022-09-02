@@ -8,11 +8,11 @@ body {
     place-items: center;
     font: 2vw system-ui;
     font-family: "Baloo 2";
-    background-color: $color-b;
+    background-color: $colour-b;
 }
 
 p {
-    color: $color-f;
+    color: $colour-f;
     text-align: justify;
     max-width: 60vw;
 }
@@ -20,13 +20,13 @@ p {
 a,
 .green {
     text-decoration: none;
-    color: $color-d;
+    color: $colour-d;
     transition: 0.4s;
 }
 
 @media (hover: hover) {
     a:hover {
-        background-color: $color-a;
+        background-color: $colour-a;
     }
 }
 
