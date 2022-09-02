@@ -18,7 +18,7 @@ function getPlaceholder() {
         <div class="line" v-for="line in [...Array(11).keys()] "></div>
     </div>
 
-    <textarea :placeholder="getPlaceholder()" rows="10" cols="50"></textarea>
+    <textarea :placeholder="getPlaceholder()" rows="10" cols="50" autofocus></textarea>
   </div>
 </template>
 
