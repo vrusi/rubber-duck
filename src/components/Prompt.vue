@@ -43,7 +43,7 @@ function getPlaceholder() {
   display: grid;
   width: 60vw;
   border-radius: 11px;
-  background-image: url("https://images.unsplash.com/photo-1615800098779-1be32e60cca3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1010&q=80");
+  background-color: #f2f2f2;
   margin: 2rem auto;
 }
 
