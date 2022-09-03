@@ -71,6 +71,7 @@ onUnmounted(() => clearInterval(intervalId));
   content: ".";
   font-weight: bold;
   text-shadow: 2rem 2rem $colour-shadow;
+  -webkit-text-fill-color: $colour-bubble-background;
   text-align: right;
   font-size: 4rem;
   width: 4rem;
