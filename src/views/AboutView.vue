@@ -22,6 +22,10 @@
       knows nothing about it, one is forced to confront all parts and
       perspectives of it, which is often enough to find the solution.
     </p>
+    <br/>
+    <p>
+      See the rubber duck debugging method steps <a href="http://lists.ethernal.org/oldarchives/cantlug-0211/msg00174.html">here</a>. 
+    </p>
     <h1>About me</h1>
     <p>Hey, I'm Veronika.</p>
     <p>
