@@ -27,7 +27,6 @@ body {
 p {
     color: $colour-primary;
     text-align: justify;
-    max-width: 60vw;
     font-size: 1.5rem;
     margin: auto;
 }
@@ -35,8 +34,7 @@ p {
 h1 {
     color: $colour-primary;
     margin: 1rem auto;
-    font-size: 3rem;
-    max-width: 60vw;
+    font-size: 2rem;
 }
 
 a {
@@ -53,23 +51,28 @@ a:hover {
     min-height: 100vh;
     text-align: center;
     margin-bottom: 5rem;
+    width: 80vw;
 }
 
-@media screen and (max-width: 380px) {
-    p {
-        font-size: 1rem;
-    }
-
-    h1 {
-        font-size: 2rem;
+@media screen and (min-width: 320px) {
+    .container {
+        width: 70vw;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 425px) {
+    .container {
+        width: 60vw;
+    }
+}
 
-    p,
+@media screen and (min-width: 768px) {
+    .container {
+        width: 30vw;
+    }
+
     h1 {
-        max-width: 40vw;
+        font-size: 3rem;
     }
 }
 

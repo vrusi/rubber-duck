@@ -50,93 +50,88 @@ onUnmounted(() => clearInterval(intervalId));
 <style lang="scss" scoped>
 @import "../assets/colours.scss";
 
+/* taken and edited from https://codepen.io/kirstenallen/pen/MWwPYYm */
 #speech-bubble {
-  transform: translatey(0px);
+  transform: translatey(0);
   animation: float 5s ease-in-out infinite;
-  text-align: center;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: 0.1rem;
   color: $colour-primary;
   background-color: $colour-bubble-background;
-  padding: 50px;
-  border-radius: 11px;
-  position: relative;
-  box-shadow: 20px 20px $colour-shadow;
-  font-family: "Baloo 2", cursive;
-  max-width: 60vw;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 1.5rem 1.5rem $colour-shadow;
   font-size: 1.5rem;
 }
 
 #speech-bubble:after {
-  transform: translatey(0px);
+  transform: translatey(0);
   animation: float2 5s ease-in-out infinite;
   content: ".";
   font-weight: bold;
-  // -webkit-text-stroke: 0.5px $colour-green;
-  -webkit-text-fill-color: $colour-bubble-background;
-  // border: 1px solid $colour-green;
-  text-shadow: 22px 22px $colour-shadow;
+  text-shadow: 2rem 2rem $colour-shadow;
   text-align: right;
   font-size: 4rem;
-  width: 55px;
-  height: 11px;
-  line-height: 30px;
-  border-radius: 11px;
+  width: 4rem;
+  height: 0.7rem;
+  border-radius: 1rem;
   background-color: $colour-bubble-background;
   position: absolute;
   display: block;
-  bottom: -30px;
-  left: 20px;
-  box-shadow: 22px 22px $colour-shadow;
+  bottom: -2rem;
+  left: 1rem;
+  box-shadow: 1.5rem 1.5rem $colour-shadow;
   z-index: -2;
 }
 
 @keyframes float {
   0% {
-    transform: translatey(0px);
+    transform: translatey(0);
   }
 
   50% {
-    transform: translatey(-20px);
+    transform: translatey(-1.3rem);
   }
 
   100% {
-    transform: translatey(0px);
+    transform: translatey(0);
   }
 }
 
 @keyframes float2 {
   0% {
-    line-height: 30px;
-    transform: translatey(0px);
+    line-height: 2rem;
+    transform: translatey(0);
   }
 
   55% {
-    transform: translatey(-20px);
+    transform: translatey(-1.3rem);
   }
 
   60% {
-    line-height: 10px;
+    line-height: 0.5rem;
   }
 
   100% {
-    line-height: 30px;
-    transform: translatey(0px);
+    line-height: 2rem;
+    transform: translatey(0);
   }
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 320px) {
+  #speech-bubble:after {
+    height: 0.6rem;
+    width: 2rem;
+    left: 0.2rem;
+    font-size: 3rem;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 768px) {
   #speech-bubble {
     font-size: 1rem;
     padding: 1rem;
-    margin-bottom: 3rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  #speech-bubble {
-    max-width: 40vw;
   }
 }
 
@@ -144,13 +139,13 @@ onUnmounted(() => clearInterval(intervalId));
   #speech-bubble {
     color: $colour-shadow-dark;
     background-color: $colour-bubble-background-dark;
-    box-shadow: 20px 20px $colour-shadow-dark;
+    box-shadow: 1.5rem 1.5rem $colour-shadow-dark;
   }
   #speech-bubble:after {
     -webkit-text-fill-color: $colour-bubble-background-dark;
     text-shadow: 22px 22px $colour-shadow-dark;
     background-color: $colour-bubble-background-dark;
-    box-shadow: 22px 22px $colour-shadow-dark;
+    box-shadow: 1.5rem 1.5rem $colour-shadow-dark;
   }
 }
 </style>
