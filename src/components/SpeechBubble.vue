@@ -129,7 +129,7 @@ onUnmounted(() => clearInterval(intervalId));
   }
 }
 
-@media screen and (min-width: 2560px) {
+@media screen and (min-width: 1024px) {
   #speech-bubble {
     max-width: 50vw;
   }

@@ -76,11 +76,11 @@ function getPlaceholder() {
 }
 
 @media screen and (max-width: 380px) {
-  .paper {
+  #paper {
     margin: 1rem auto;
   }
 
-  .paper > textarea {
+  #prompt {
     margin: 0 0 0 1rem;
     line-height: 1.5rem;
     font-size: 1rem;
@@ -92,13 +92,13 @@ function getPlaceholder() {
   }
 }
 
-@media screen and (min-width: 2560px) {
-  .paper,
-  .lines {
+@media screen and (min-width: 1024px) {
+  #paper,
+  #lines {
     max-width: 40vw;
   }
 
-  .paper > textarea {
+  #paper > textarea {
     max-width: 34vw;
   }
 }
