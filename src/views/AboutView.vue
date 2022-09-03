@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import IconGitHub from "../components/icons/IconGitHub.vue";
+import IconLinkedIn from "../components/icons/IconLinkedIn.vue";
+import IconEnvelope from "../components/icons/IconEnvelope.vue";
+</script>
+
 <template>
   <main>
     <div class="container">
@@ -32,18 +38,48 @@
         >.
       </p>
       <h1>About me</h1>
-      <p>Hey, I'm Veronika.</p>
       <p>
-        I'm a full-stack developer based in Bratislava, Slovakia. Feel free to
-        check out my
-        <a href="https://github.com/vrusi">GitHub</a> or
-        <a href="https://www.linkedin.com/in/veronika-rusinkova-6b012718a/"
-          >LinkedIn</a
-        >. You can also reach me at
-        <a href="mailto: me@vrusinkova.com">me@vrusinkova.com</a>.
+        Hey, I'm Veronika, a full-stack developer based in Bratislava, Slovakia.
       </p>
+      <br />
+      <p>Feel free to reach me here:</p>
+      <div class="contact-line">
+        <IconGitHub />
+        <a href="https://github.com/vrusi">vrusi</a>
+      </div>
+      <div class="contact-line">
+        <IconLinkedIn />
+        <a href="https://www.linkedin.com/in/veronika-rusinkova-6b012718a/"
+          >Veronika Rusinkova</a
+        >
+      </div>
+      <div class="contact-line">
+        <IconEnvelope />
+        <a href="mailto: me@vrusinkova.com">me@vrusinkova.com</a>
+      </div>
     </div>
   </main>
 </template>
 
-<style></style>
+<style lang="scss">
+@import "../assets/colours.scss";
+
+.contact-line {
+  display: flex;
+  align-items: center;
+  color: $colour-primary;
+  margin-bottom: 0.5rem;
+}
+
+.contact-line a {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media (prefers-color-scheme: dark) {
+  .contact-line {
+    color: $colour-primary-dark;
+  }
+}
+</style>
