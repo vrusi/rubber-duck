@@ -17,20 +17,21 @@ import { RouterLink } from "vue-router";
 nav {
   font-size: 1rem;
   text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: $colour-a;
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+  margin-top: 1rem;
 }
 
 nav a {
   padding: 0 1rem;
-  border-left: 1px solid $colour-d;
+  border-left: 1px solid $colour-primary-light;
+  font-weight: 600;
+}
+
+nav a.router-link-exact-active {
+  color: $colour-primary;
+}
+
+nav a.router-link-exact-active:hover {
+  background-color: transparent;
 }
 
 nav a:first-of-type {

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Button from "./Button.vue";
-
 const placeholders = [
   "I'm implementing user registration and...",
   "My button component doesn't redirect. The way I wrote it is...",
@@ -15,10 +13,15 @@ function getPlaceholder() {
 <template>
   <div class="paper">
     <div class="lines">
-        <div class="line" v-for="line in [...Array(11).keys()] "></div>
+      <div class="line" v-for="line in [...Array(10).keys()]"></div>
     </div>
 
-    <textarea :placeholder="getPlaceholder()" rows="10" cols="50" autofocus></textarea>
+    <textarea
+      :placeholder="getPlaceholder()"
+      rows="9"
+      cols="50"
+      autofocus
+    ></textarea>
   </div>
 </template>
 
@@ -44,7 +47,7 @@ function getPlaceholder() {
   border-radius: 11px;
   background-color: #f2f2f2;
   margin: 2rem auto;
-  box-shadow: 22px 22px $colour-c;
+  box-shadow: 22px 22px $colour-background-dark;
 }
 
 .paper > textarea {
@@ -61,14 +64,41 @@ function getPlaceholder() {
   grid-row: 1;
   font-size: 1.5rem;
   line-height: 2rem;
-  color: rgba(40, 110, 138, 0.8);
+  color: $colour-primary;
 }
 
 .paper > textarea::placeholder {
-  color: rgba(40, 110, 138, 0.4);
+  color: rgba(144, 99, 97, 0.5);
 }
 .paper > textarea:focus {
-    outline: none;
+  outline: none;
 }
 
+@media screen and (max-width: 380px) {
+  .paper {
+    margin: 1rem auto;
+  }
+
+  .paper > textarea {
+    margin: 0 0 0 1rem;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .line {
+    height: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .paper,
+  .lines {
+    max-width: 40vw;
+  }
+
+  .paper > textarea {
+    max-width: 34vw;
+  }
+}
 </style>

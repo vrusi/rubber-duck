@@ -19,7 +19,7 @@ const messages = [
   "What do you mean?",
   "I'm not sure I'm following...",
   "Aah, I see... But why?",
-  "What does that part consist of?"
+  "What does that part consist of?",
 ];
 
 function getMessage() {
@@ -52,15 +52,15 @@ onUnmounted(() => clearInterval(intervalId));
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
-  font-size: 15px;
-  color: $colour-d;
-  background-color: $colour-a;
+  color: $colour-primary;
+  background-color: $colour-background-light;
   padding: 50px;
   border-radius: 11px;
   position: relative;
-  box-shadow: 20px 20px $colour-c;
+  box-shadow: 20px 20px $colour-background-dark;
   font-family: "Baloo 2", cursive;
-  // border: 1px solid $colour-green;
+  max-width: 60vw;
+  font-size: 1.5rem;
 }
 
 .speech-bubble:after {
@@ -69,21 +69,21 @@ onUnmounted(() => clearInterval(intervalId));
   content: ".";
   font-weight: bold;
   // -webkit-text-stroke: 0.5px $colour-green;
-  -webkit-text-fill-color: $colour-a;
+  -webkit-text-fill-color: $colour-background-light;
   // border: 1px solid $colour-green;
-  text-shadow: 22px 22px $colour-c;
+  text-shadow: 22px 22px $colour-background-dark;
   text-align: right;
-  font-size: 55px;
+  font-size: 4rem;
   width: 55px;
   height: 11px;
   line-height: 30px;
   border-radius: 11px;
-  background-color: $colour-a;
+  background-color: $colour-background-light;
   position: absolute;
   display: block;
   bottom: -30px;
   left: 20px;
-  box-shadow: 22px 22px $colour-c;
+  box-shadow: 22px 22px $colour-background-dark;
   z-index: -2;
 }
 
@@ -118,6 +118,20 @@ onUnmounted(() => clearInterval(intervalId));
   100% {
     line-height: 30px;
     transform: translatey(0px);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .speech-bubble {
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .speech-bubble {
+    max-width: 50vw;
   }
 }
 </style>

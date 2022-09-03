@@ -8,30 +8,54 @@ body {
     place-items: center;
     font: 2vw system-ui;
     font-family: "Baloo 2";
-    background-color: $colour-b;
+    background-color: $colour-background;
 }
 
 p {
-    color: $colour-f;
+    color: $colour-primary;
     text-align: justify;
+    max-width: 60vw;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+h1 {
+    color: $colour-primary;
+    margin: 1rem auto;
+    font-size: 3rem;
     max-width: 60vw;
 }
 
-a,
-.green {
+a {
     text-decoration: none;
-    color: $colour-d;
+    color: $colour-secondary;
     transition: 0.4s;
 }
 
-@media (hover: hover) {
-    a:hover {
-        background-color: $colour-a;
-    }
+a:hover {
+    background-color: rgba(250, 238, 215, 0.5);
 }
 
 .container {
     min-height: 100vh;
     text-align: center;
     margin-bottom: 5rem;
+}
+
+@media screen and (max-width: 380px) {
+    p {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+
+    p,
+    h1 {
+        max-width: 40vw;
+    }
 }

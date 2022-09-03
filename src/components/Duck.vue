@@ -1,10 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <img
-    src="/image.png"
-    alt="Your rubber duck helper"
-  />
+  <img src="/image.png" alt="Your rubber duck helper" />
 </template>
 
 <style>

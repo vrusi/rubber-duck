@@ -15,11 +15,4 @@ import Prompt from "../components/Prompt.vue";
   </main>
 </template>
 
-<style lang="scss">
-@import "../assets/colours.scss";
-
-h1 {
-  color: $colour-d;
-  margin: 2rem auto;
-}
-</style>
+<style></style>
