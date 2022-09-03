@@ -11,12 +11,13 @@ function getPlaceholder() {
 </script>
 
 <template>
-  <div class="paper">
-    <div class="lines">
+  <div id="paper">
+    <div id="lines">
       <div class="line" v-for="line in [...Array(10).keys()]"></div>
     </div>
 
     <textarea
+      id="prompt"
       :placeholder="getPlaceholder()"
       rows="9"
       cols="50"
@@ -28,7 +29,16 @@ function getPlaceholder() {
 <style lang="scss">
 @import "../assets/colours.scss";
 
-.lines {
+#paper {
+  display: grid;
+  width: 60vw;
+  border-radius: 11px;
+  background-color: $colour-paper-light;
+  margin: 2rem auto;
+  box-shadow: 22px 22px $colour-shadow;
+}
+
+#lines {
   width: 60vw;
   height: 100%;
   grid-column: 1;
@@ -38,19 +48,10 @@ function getPlaceholder() {
 .line {
   width: 100%;
   height: 2rem;
-  border-bottom: 1px rgba(0, 100, 255, 0.3) solid;
+  border-bottom: 1px $colour-line-horizontal solid;
 }
 
-.paper {
-  display: grid;
-  width: 60vw;
-  border-radius: 11px;
-  background-color: #f2f2f2;
-  margin: 2rem auto;
-  box-shadow: 22px 22px $colour-background-dark;
-}
-
-.paper > textarea {
+#prompt {
   word-wrap: break-word;
   resize: none;
   width: 54vw;
@@ -58,19 +59,19 @@ function getPlaceholder() {
   background-color: transparent;
   margin: 0 0 0 4rem;
   border: none;
-  border-left: 2px rgba(255, 0, 0, 0.3) solid;
+  border-left: 2px $colour-line-vertical solid;
   padding: 2rem 3rem 2rem 2rem;
   grid-column: 1;
   grid-row: 1;
   font-size: 1.5rem;
   line-height: 2rem;
-  color: $colour-primary;
+  color: $colour-prompt-light;
 }
 
-.paper > textarea::placeholder {
-  color: rgba(144, 99, 97, 0.5);
+#prompt::placeholder {
+  color: $placeholder-light;
 }
-.paper > textarea:focus {
+#prompt:focus {
   outline: none;
 }
 
@@ -99,6 +100,26 @@ function getPlaceholder() {
 
   .paper > textarea {
     max-width: 34vw;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #paper {
+    background-color: $colour-paper-dark;
+    box-shadow: 22px 22px $colour-shadow-dark;
+  }
+
+  .line {
+    border-bottom: 1px $colour-line-horizontal-dark solid;
+  }
+
+  #prompt {
+    border-left: 2px $colour-line-vertical-dark solid;
+    color: $colour-prompt-dark;
+  }
+
+  #prompt::placeholder {
+    color: $placeholder-dark;
   }
 }
 </style>

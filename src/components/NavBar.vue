@@ -23,11 +23,12 @@ nav {
 nav a {
   padding: 0 1rem;
   border-left: 1px solid $colour-primary-light;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 nav a.router-link-exact-active {
   color: $colour-primary;
+  font-weight: 600;
 }
 
 nav a.router-link-exact-active:hover {
@@ -36,5 +37,15 @@ nav a.router-link-exact-active:hover {
 
 nav a:first-of-type {
   border: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  nav a {
+    border-left: 1px solid $colour-primary;
+  }
+
+  nav a.router-link-exact-active {
+    color: $colour-primary-dark;
+  }
 }
 </style>

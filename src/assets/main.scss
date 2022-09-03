@@ -33,7 +33,7 @@ a {
 }
 
 a:hover {
-    background-color: rgba(250, 238, 215, 0.5);
+    background-color: $colour-highlight;
 }
 
 .container {
@@ -57,5 +57,25 @@ a:hover {
     p,
     h1 {
         max-width: 40vw;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    p,
+    h1 {
+        color: $colour-primary-dark;
+    }
+
+    a {
+        color: $colour-secondary-dark;
+    }
+
+    a:hover {
+        background-color: $colour-highlight-dark;
+    }
+
+    body {
+        background-color: $colour-background-dark;
     }
 }

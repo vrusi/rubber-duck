@@ -39,13 +39,13 @@ onUnmounted(() => clearInterval(intervalId));
 </script>
 
 <template>
-  <div class="speech-bubble">{{ currentMessage }}</div>
+  <div id="speech-bubble">{{ currentMessage }}</div>
 </template>
 
 <style lang="scss" scoped>
 @import "../assets/colours.scss";
 
-.speech-bubble {
+#speech-bubble {
   transform: translatey(0px);
   animation: float 5s ease-in-out infinite;
   text-align: center;
@@ -53,37 +53,37 @@ onUnmounted(() => clearInterval(intervalId));
   font-weight: bold;
   letter-spacing: 3px;
   color: $colour-primary;
-  background-color: $colour-background-light;
+  background-color: $colour-bubble-background;
   padding: 50px;
   border-radius: 11px;
   position: relative;
-  box-shadow: 20px 20px $colour-background-dark;
+  box-shadow: 20px 20px $colour-shadow;
   font-family: "Baloo 2", cursive;
   max-width: 60vw;
   font-size: 1.5rem;
 }
 
-.speech-bubble:after {
+#speech-bubble:after {
   transform: translatey(0px);
   animation: float2 5s ease-in-out infinite;
   content: ".";
   font-weight: bold;
   // -webkit-text-stroke: 0.5px $colour-green;
-  -webkit-text-fill-color: $colour-background-light;
+  -webkit-text-fill-color: $colour-bubble-background;
   // border: 1px solid $colour-green;
-  text-shadow: 22px 22px $colour-background-dark;
+  text-shadow: 22px 22px $colour-shadow;
   text-align: right;
   font-size: 4rem;
   width: 55px;
   height: 11px;
   line-height: 30px;
   border-radius: 11px;
-  background-color: $colour-background-light;
+  background-color: $colour-bubble-background;
   position: absolute;
   display: block;
   bottom: -30px;
   left: 20px;
-  box-shadow: 22px 22px $colour-background-dark;
+  box-shadow: 22px 22px $colour-shadow;
   z-index: -2;
 }
 
@@ -122,7 +122,7 @@ onUnmounted(() => clearInterval(intervalId));
 }
 
 @media screen and (max-width: 380px) {
-  .speech-bubble {
+  #speech-bubble {
     font-size: 1rem;
     padding: 1rem;
     margin-bottom: 3rem;
@@ -130,8 +130,22 @@ onUnmounted(() => clearInterval(intervalId));
 }
 
 @media screen and (min-width: 2560px) {
-  .speech-bubble {
+  #speech-bubble {
     max-width: 50vw;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #speech-bubble {
+    color: $colour-primary-dark;
+    background-color: $colour-bubble-background-dark;
+    box-shadow: 20px 20px $colour-shadow-dark;
+  }
+  #speech-bubble:after {
+    -webkit-text-fill-color: $colour-bubble-background-dark;
+    text-shadow: 22px 22px $colour-shadow-dark;
+    background-color: $colour-bubble-background-dark;
+    box-shadow: 22px 22px $colour-shadow-dark;
   }
 }
 </style>
