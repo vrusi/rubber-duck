@@ -1,6 +1,6 @@
 # Rubber Duck
 
-This app is here to help you find and solve your problems. Based on the rubber duck debuging method, it is mostly focused on helping software engineers to get rid of the bugs in their code. However, everyone is welcome to consult the duck with any sort of problem.
+This app is here to help you find and solve your problems. Based on the rubber duck debugging method, it is mostly focused on helping software engineers to get rid of the bugs in their code. However, everyone is welcome to consult the duck with any sort of problem.
 
 Begin by explaining your problem to the duck. Remember to be as specific as possible; the duck does not know anything about your problem, you must introduce it to the topic.
 

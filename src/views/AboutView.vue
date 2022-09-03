@@ -4,7 +4,7 @@
     <p>
       This app is here to help you find and solve your problems. Based on the
       <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging"
-        >rubber duck debuging method</a
+        >rubber duck debugging method</a
       >, it is mostly focused on helping software engineers to get rid of the
       bugs in their code. However, everyone is welcome to consult the duck with
       any sort of problem.
