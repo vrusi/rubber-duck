@@ -131,13 +131,13 @@ onUnmounted(() => clearInterval(intervalId));
 
 @media screen and (min-width: 1024px) {
   #speech-bubble {
-    max-width: 50vw;
+    max-width: 40vw;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   #speech-bubble {
-    color: $colour-primary-dark;
+    color: $colour-shadow-dark;
     background-color: $colour-bubble-background-dark;
     box-shadow: 20px 20px $colour-shadow-dark;
   }

@@ -75,7 +75,7 @@ function getPlaceholder() {
   outline: none;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 425px) {
   #paper {
     margin: 1rem auto;
   }
