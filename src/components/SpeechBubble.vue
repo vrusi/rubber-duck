@@ -33,7 +33,7 @@ function getMessage() {
 
 const currentMessage = ref(getMessage());
 
-let intervalId = 0;
+let intervalId: any = null;
 onMounted(() => {
   intervalId = setInterval(() => {
     currentMessage.value = getMessage();
