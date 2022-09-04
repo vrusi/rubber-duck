@@ -6,7 +6,7 @@ Begin by explaining your problem to the duck. Remember to be as specific as poss
 
 We often think we understand a problem and fail to realise that we have missed possible solutions. By having to explain the problem to someone who knows nothing about it, one is forced to confront all parts and perspectives of it, which is often enough to find the solution.
 
-# Live instance
+## Live instance
 Rubber Duck lives at [rubberduck.help](https://rubberduck.help/), feel free to give it a visit!
 
 ## Project Setup
